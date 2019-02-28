@@ -1,0 +1,77 @@
+
+package javamatchinggame;
+
+import javafx.application.Application;
+import javafx.geometry.Pos;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
+
+/**
+ *
+ * @author cb0806151
+ */
+public class JavaMatchingGame extends Application {
+    @Override
+    public void start(Stage stage) {
+        
+        GridPane pane = new GridPane();
+        pane.setAlignment(Pos.CENTER);
+        
+//        Group root = new Group();
+        Scene scene = new Scene(pane, 480, 480);
+        
+        
+        // Re
+        Rectangle a1 = new Rectangle(0 ,0 ,96, 96);         // the size of rectange's will be 96 by 96
+        a1.setFill(Color.RED);
+        
+        Rectangle a2 = new Rectangle(0 ,0 ,96, 96);
+        a2.setFill(Color.YELLOW);
+        Rectangle a3 = new Rectangle(0 ,0 ,96, 96);
+        a3.setFill(Color.ROSYBROWN);
+        Rectangle b1 = new Rectangle(0 ,0 ,96, 96);
+        
+        Rectangle b2 = new Rectangle(0 ,0 ,96, 96);
+        
+        Rectangle b3 = new Rectangle(0 ,0 ,96, 96);
+        
+        Rectangle c1 =  new Rectangle(0 ,0 ,96, 96);
+        c1.setFill(Color.RED);
+        Rectangle c2 = new Rectangle(0 ,0 ,96, 96);
+        c2.setFill(Color.YELLOW);
+        Rectangle c3 = new Rectangle(0 ,0 ,96, 96);
+        c3.setFill(Color.ROSYBROWN);
+        
+        
+        pane.add(a1, 2,2);
+        pane.add(a2, 3, 2);
+        pane.add(a3, 4, 2);
+        pane.add(b1, 2, 3);
+        pane.add(b2, 3, 3);
+        pane.add(b3, 4, 3);
+        pane.add(c1, 2, 4);
+        pane.add(c2, 3, 4);
+        pane.add(c3, 4, 4);
+        stage.setScene(scene);
+        stage.setTitle("Rectangel");
+        stage.show();
+        
+        
+        
+        Button reset = new Button("Reset");
+        
+        pane.add(reset, 3, 5);
+    }
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        launch(args);
+    }
+    
+}
