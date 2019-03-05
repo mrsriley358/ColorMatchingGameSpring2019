@@ -6,7 +6,7 @@ Click on the panels to find the three sets of matching colors
 
 ![Sample Output](README.jpg)
 
-#Authors
+## Authors
 
 Christopher Baunach and Isaiah Geshka
 
