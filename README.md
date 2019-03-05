@@ -6,6 +6,9 @@ Click on the panels to find the three sets of matching colors
 
 ![Sample Output](README.jpg)
 
+#Authors
+
+Christopher Baunach and Isaiah Geshka
 
 ## Do not change content below this line
 ## Adapted from a README Built With
